@@ -1,0 +1,7 @@
+App.config
+bin
+ChewieBot.csproj
+*.settings
+Properties
+obj
+Form1.resx
