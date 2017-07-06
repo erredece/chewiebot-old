@@ -22,7 +22,7 @@ namespace ChewieBot
         string userName, password, channelName, chatCommandId, chatMessagePrefix, chatPingId;
         DateTime lastMessage;
         Queue<string> sendMessageQueue;
-
+        
         public chewieBot()
         {
             var parameters = File
@@ -105,6 +105,7 @@ namespace ChewieBot
                     if (message.Contains(chatPingId))
                     {
                         writer.WriteLine("PONG :tmi.twitch.tv");
+                        writer.Flush();
                         lastMessage = DateTime.Now;
                     }
                 }
