@@ -16,7 +16,7 @@ using TwitchLib.Models.API.v5.Users;
 
 namespace ChewieBot
 {
-    public partial class chewieBot : Form
+    public partial class chewieBot
     {
         readonly ConnectionCredentials credentials = new ConnectionCredentials(twitchInfo.botUsername, twitchInfo.authToken);
         TwitchClient client;
